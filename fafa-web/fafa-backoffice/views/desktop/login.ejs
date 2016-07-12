@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include common/public.ejs %>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form method="post" action="/login">
+            <input type="text" value="" placeholder="输入用户名" name="code" id="username">
+            <input type="password" placeholder="输入密码" name="password" id="password">
+            <div style="display:none;" class="error-mess">
+                <span class="error-icon"></span><span id="error-message"></span>
+            </div>
+            <input type="button" id="submit" data-redirect="<%= data.redirect %>" value="登 录">
+        </form>
+    </div>
+</div>
+
+<% include common/footer.ejs %>
+</body>
+</html>

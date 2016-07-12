@@ -1,0 +1,126 @@
+@media ( min-width : 992px) {
+    .list-content{
+        max-height: 280px;
+    }
+    .ejs-td{
+        max-width: 300px;
+    }
+}
+
+@media ( min-width : 1200px) {
+    .list-content{
+        max-height: 430px;
+        min-height: 200px;
+    }
+    .ejs-td{
+        max-width: 520px;
+    }
+}
+
+.ejs-td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.sco-content{
+}
+
+.sco-footer {
+    position: fixed;
+}
+
+.sco_modal{
+    padding-right: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list-content{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#infoText span{
+    font-weight: 700;
+}
+
+.sco-list{
+    font-size: 13px;
+}
+
+.sco-list .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    padding: 6px 10px;
+}
+
+.static-info{
+    margin-top: 1px;
+}
+
+.static-info .name {
+    height: 34px;
+    line-height: 3;
+    vertical-align: middle;
+}
+
+.static-info .static-form {
+    background: #fff none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0;
+    color: #555;
+    display: block;
+    font-size: 13px;
+    height: 34px;
+    padding: 10px 2px 0;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.static-form.static-textarea{
+    height: auto;
+}
+.static-form.order-info{
+    border-bottom-color: #FFCC66;
+}
+.static-form.customer-info{
+    border-bottom-color: #3333CC;
+}
+.static-form.fico-info{
+    border-bottom-color: #66CCFF;
+}
+.static-form.ship-info{
+    border-bottom-color: #FFCCCC;
+}
+
+.static-disabled{
+    font-weight: 600;
+}
+
+.ss_icon {
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 18px;
+    color: #ff0000;
+}
+.ss_endicon {
+    left: 8px;
+    top: 3px;
+}
+
+.ss_fronticon, .ss_endicon {
+    position: absolute;
+}
+.div_focus{
+    background-color: #e74c3c;
+    color: #fff;
+}
+.error-input {
+    border-color: #e74c3c;
+    box-shadow: none;
+    color: #e74c3c;
+}

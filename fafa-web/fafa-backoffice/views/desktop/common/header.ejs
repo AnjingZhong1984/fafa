@@ -1,0 +1,36 @@
+<%
+var prePath = global.config.contextPath + global.config.viewPrefix;
+%>
+<nav class="navbar navbar-default navbar-fixed-top" id="pageHeader">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="<%= prePath %>/" style="padding:0;">
+                <div style="margin-top: 20px;">绩效管理</div>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="<%= prePath %>#" class="fui-user dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <em class="unzhehang" style="width: 60px;"><%= session.userData.userName %></em>
+                        <span class="caret" style="margin-bottom: 8px;"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="navMenu" href="<%= prePath %>/auth/index-myInfo">个人信息</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="navMenu" href="<%= prePath %>/logout">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+                <li class="index"><a href="<%= prePath %>/">首页</a></li>
+                <li class="plan"><a href="<%= prePath %>/plan/">计划与问题</a></li>
+                <li class="form"><a href="<%= prePath %>/form/">分类表单</a></li>
+                <li class="system"><a href="<%= prePath %>/system/">系统管理</a></li>
+                <li class="statistic"><a href="<%= prePath %>/statistic/">统计分析</a></li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
